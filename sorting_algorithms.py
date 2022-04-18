@@ -1,4 +1,4 @@
-#selection sort
+### selection sort
 def selectionsort(arr):
 	for i in range(len(arr)):
 		minelementindex = i
@@ -10,7 +10,7 @@ def selectionsort(arr):
 		arr[i],arr[minelementindex]=arr[minelementindex],arr[i]
 	return arr
 
-#bubble sort
+### bubble sort
 def bubblesort(arr):
 	for i in range(len(arr)):
 		for j in range(len(arr)-1,i,-1):
@@ -18,7 +18,7 @@ def bubblesort(arr):
 				arr[j-1],arr[j]=arr[j],arr[j-1]
 	return arr
 
-#insertion sort
+### insertion sort
 def insertionsort(arr):
 	for i in range(len(arr)):
 		j=i-1
@@ -29,7 +29,7 @@ def insertionsort(arr):
 		arr[j+1] = curr
 	return arr
 
-#quick sort
+### quick sort
 def partition(arr,low,high):
     i=low-1
     pivot=arr[high]
@@ -50,7 +50,7 @@ def quicksort(arr,low,high):
         
 
 
-#merge sort
+### merge sort
 def mergeSort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
@@ -79,7 +79,7 @@ def mergeSort(arr):
             k += 1
 
 
-#heap sort
+### heap sort
 def heapsort(arr):
     import heapq
     heapq.heapify(arr)
